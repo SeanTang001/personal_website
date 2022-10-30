@@ -4,6 +4,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Source from './components/Source'
+import React  from 'react';
 
 import { Container, Form, Button, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -22,7 +23,7 @@ import {
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -30,39 +31,36 @@ const App = () => {
         crossOrigin="anonymous"
       />
       <Router>
-        <Navbar expand="lg">
+        <Navbar expand="lg" variant="dark" bg="dark" className="navbar" >
           <Container>
             <LinkContainer to="/">
-            <Navbar.Brand>Sean Tang</Navbar.Brand>
+            <Navbar.Brand className='nav_name'><strong>Sean Tang</strong></Navbar.Brand>
             </LinkContainer>
-            <Navbar.Collapse id="basic-navbar-nav">
-            <div className="nav">
+            <Navbar.Collapse id="basic-navbar-nav" className="nav">
+            <div>
               <Nav className="me-auto"> 
-                <LinkContainer to="/about">
+                {/* <LinkContainer to="/about">
                   <Nav.Link>
                   About
                   </Nav.Link>
-                </LinkContainer>
+                </LinkContainer> */}
                 <LinkContainer to="/projects">
                   <Nav.Link>Projects</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/resume">
                   <Nav.Link>Resume</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/source">
-                  <Nav.Link>Source</Nav.Link>
-                </LinkContainer>
               </Nav>
             </div>
           </Navbar.Collapse>
           </Container>
           </Navbar>
+          ~{"\n"}
           <Routes>
-            <Route path="/" element={<Container>Home</Container>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/source" element={<Source id="Source"/>}/>
+            <Route path="/" element={<About/>}/>
+            {/* <Route path="/about" element={<About/>}/> */}
             <Route path="/projects" element={<Projects id="Projects"/>}/>
-            <Route path="/resume" element={<Resume id="Projects"/>}/>            
+            <Route path="/resume" element={<Resume id="Projects"/>}/> 
             </Routes>
         </Router>
     </div>

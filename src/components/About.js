@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap"
 import logo from '../logo.svg';
+import React  from 'react';
 
 const About = ({id}) => {
     return (
@@ -13,7 +14,6 @@ const About = ({id}) => {
             Me
             </h3>
             <p>
-                
             I'm a student at UCLA, studying Electrical and Computer Engineering. 
             <ul>
                 <li>
@@ -28,9 +28,9 @@ const About = ({id}) => {
             </ul>
 
             <h3>
-            Projects
+            Source
             </h3>        
-            This site was made using ReactJS. All content on this site is licensed under the MIT license unless otherwise specified. The source of this website can be found here.
+            This site was made using ReactJS. 
             </p>
 
         </Col>
