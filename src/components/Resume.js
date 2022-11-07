@@ -9,6 +9,7 @@ const Resume = ({id}) => {
             Resume
         </h2>
         <iframe className="resume" src={resume}>Resume</iframe>
+
         </Container>
     )
   }

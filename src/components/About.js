@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap"
 import logo from '../logo.svg';
+import face from "../face.jpg";
 import React  from 'react';
 
 const About = ({id}) => {
@@ -7,12 +8,12 @@ const About = ({id}) => {
     <Container>
         <Row>
         <Col>
-            <h2>
+            <h4>
                 About
-            </h2>        
-            <h3>
+            </h4>        
+            <h4>
             Me
-            </h3>
+            </h4>
             <p>
             I'm a student at UCLA, studying Electrical and Computer Engineering. 
             <ul>
@@ -22,22 +23,22 @@ const About = ({id}) => {
                 <li>
                     <a href="https://www.linkedin.com/in/sean-tang-96a15419a/">Linkedin</a>
                 </li>
-                <li>
-                    <a href="https://github.com/SeanTang001">Resume</a>
-                </li>
             </ul>
-
-            <h3>
+            <h4>Contact</h4>
+            <a href="mailto: seantang001@g.ucla.edu">Email</a>
+            <h4>
             Source
-            </h3>        
+            </h4>        
             This site was made using ReactJS. 
+            
             </p>
 
         </Col>
         <Col>
-            <img src={logo} alt="BigCo Inc. logo"/>
+            <img className="face" src={face} alt="BigCo Inc. logo"/>
         </Col>
         </Row>
+
     </Container>
     )
   }

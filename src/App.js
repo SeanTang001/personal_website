@@ -23,7 +23,7 @@ import {
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -55,12 +55,12 @@ const App = () => {
           </Navbar.Collapse>
           </Container>
           </Navbar>
-          ~{"\n"}
+          <br></br>
           <Routes>
             <Route path="/" element={<About/>}/>
             {/* <Route path="/about" element={<About/>}/> */}
-            <Route path="/projects" element={<Projects id="Projects"/>}/>
-            <Route path="/resume" element={<Resume id="Projects"/>}/> 
+            <Route path="/projects" element={<Projects id="projects"/>}/>
+            <Route path="/resume" element={<Resume id="resume"/>}/> 
             </Routes>
         </Router>
     </div>

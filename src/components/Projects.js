@@ -1,6 +1,9 @@
 import { Container, Col, Row } from "react-bootstrap"
 import React  from 'react';
 import logo from '../logo.svg';
+import inventory_tracker from '../inventory_tracker.png';
+import forgus from '../forgus.png'
+import darkforrest from '../darkforrest.png'
 
 const Projects = ({id}) => {
     return (
@@ -8,38 +11,38 @@ const Projects = ({id}) => {
       <Col>
         <Row>
           <Col>
-          <h2>Projects 1</h2>
+          <h2>FORGUS</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            An IoT application that provides real-time anonymized information on foot traffic. Together with a statistical model, the application also provides a prediction of foot traffic. 
             </p>        
             </Col>
             <Col>
-            <img src={logo} alt="BigCo Inc. logo"/>
+            <img className="projects" src={forgus} alt="BigCo Inc. logo"/>
         </Col>
           <Col>
-          <h2>Projects 2</h2>
+          <h2>Dark Forrest</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              An RTS game inspired by the Chinese Science Fiction Novel “Dark Forest” by Liu Qi Xin being developed at the Studio Heart Engine Club at Foothill High School
             </p>        
           </Col>   
           <Col>
-            <img src={logo} alt="BigCo Inc. logo"/>
+            <img className = "projects" src={darkforrest} alt="BigCo Inc. logo"/>
         </Col> 
         </Row>
         <Row>    
           <Col>
-          <h2>Projects 3</h2>
+          <h2>Bay Area Inventory Tracker</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Inventory Tracker - A data aggregation website that utilizes web scraping to provide inventory data of multiple popular grocery stores in the Bay Area. The web application contains an external facing API, database infrastructure, and basic data analysis services. 
             </p>        
           </Col>
           <Col>
-            <img src={logo} alt="BigCo Inc. logo"/>
+            <img className="projects" src={inventory_tracker} alt="BigCo Inc. logo"/>
         </Col>
       <Col>
-          <h2>Projects 4</h2>
+          <h2>OOF OS</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              A bare-metal x86 Operating System following the book “OPERATING SYSTEMS: FROM 0 TO 1”
             </p>        
           </Col>
           <Col>
